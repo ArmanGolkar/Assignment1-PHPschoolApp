@@ -1,0 +1,427 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#sidebar {
+    flex-basis: 20%;
+    background-color: #2c3e50;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#sidebar h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #ff9f43;/* 3498db */
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+}
+
+#sidebar a {
+    display: block;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#sidebar a:hover {
+    background-color: #2980b9;
+}
+
+#user-info {
+    margin-top: 50%;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+#user-info p {
+    margin: 5px 0;
+}
+
+#user-info p a{
+    margin: 5px 0;
+    background-color: #9b59b6;
+}
+
+#user-info p a:hover{
+    background-color: #8e44ad;
+}
+
+#content {
+    flex-basis: 80%;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 27px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+}
+
+th {
+    background-color: #555;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+.enroll-student-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.enroll-student-btn:hover {
+    background-color: #2980b9;
+}
+
+.enroll-student-btn i {
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar form{ 
+    width:100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.search-field {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline:0;
+}
+
+.search-btn {
+    background-color: #fff;
+    color: #3498db;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.search-btn:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn,
+.delete-btn,
+.mark-btn {
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.edit-btn i,
+.delete-btn i,
+.mark-btn i {
+    margin-right:5px;
+}
+
+.edit-btn {
+    background-color: #2ecc71;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #27ae60;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.mark-btn {
+    background-color: #e67e22;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+/* Style for disabled button */
+.mark-btn[disabled] {
+    opacity: 0.5; /* Reduce opacity */
+    cursor: not-allowed; /* Change cursor to indicate it's not clickable */
+}
+
+
+.mark-btn:hover {
+    background-color: #d35400;
+}
+
+
+.view-btn {
+    background-color: transparent;
+    border: none;
+    color: #45a049;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: color 0.2s ease-in-out;
+  }
+  
+.view-btn:hover {
+    color: #007bff;
+    
+  }
+
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+.card:last-child {
+    margin-right: 0; /* Remove margin-right for the last card */
+}
+
+.card i {
+    font-size: 36px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.card span {
+    display: block;
+    font-size: 24px;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Enrollment Form Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #15172b;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 450px;
+    position: relative;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #b9b9b9;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.modal-content h2 {
+    color: #f0a500;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: #eee;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #303245;
+    color: #eee;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+}
+
+.enroll-btn {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.enroll-btn:hover {
+    background-color: #06b;
+}
+
+.enroll-student-btn i {
+    margin-right: 10px;
+}
+
+
+.modal p{
+color:#fff;
+text-align:center;
+}
+
+
+.card span i{ color:#f0a500; font-size:27px; }
+
+
+/* ////////////////////////////////// */
+
+
+.page-nav {
+    background-color: #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  .page-nav button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-nav button:hover {
+    background-color: #555;
+    cursor: pointer;
+  }  
+   
+
+
+/* ////////////////////////////////// */
+
+.alert{ padding: 20px; border-radius: 5px; text-align: center; position: relative;
+    width: 100%; margin: 20px auto; color: #333; font-size: 16px; box-sizing: border-box;}
+
+.alert.error{ background-color: #ffe0e0; color: #d8000c; border: 1px solid #d8000c; }
+
+.alert.success{ background-color: #e6ffe6; color: #006600; border: 1px solid #006600;  }
+
+.close-alert{ position: absolute; top: 5px; right: 5px; cursor: pointer; font-size: 24px;
+                padding: 1px 4px; transition: color 0.2s ease-in-out; }
+
+.close-alert:hover{ color:#000; }
